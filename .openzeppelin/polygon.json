@@ -1,0 +1,570 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x57C89FD57Dd1A3a43b1D89732DA3C2021a8d008D",
+    "txHash": "0x0b367541f870b0022b74dfc20dd2a26f29461e75120ef415bd3f8007de52ca90"
+  },
+  "proxies": [
+    {
+      "address": "0x3d5710d9Ab0eCAec3EDf4B122A490aD6a923eEB5",
+      "txHash": "0x3f200fb12806b63313965747730dc783313ad0ca1a98c4587cd9f8209d1d1db8",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x071B906C552Dd75436720613CC8F893c654A7a29",
+      "txHash": "0xeb7e2606ba38ca89c89947c07130e2e4a8266b44c436e6447db61b7bb2d76547",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x86c38964f25Af60207a776F9512c43A77d01e68D",
+      "txHash": "0xfd53f3465b4501579365fc1d9e1eac97d642ac968b91779d44aea2614ebc1392",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "c4e1e6b5295dc2eb233583772974b6b384d414d2f5e5444d0139ffd8b9b95302": {
+      "address": "0x0b5c7907675C260ddca4991a8F0dAa74d4d39180",
+      "txHash": "0x0b40aa9f6243076c6434e407c76e33c5206a428c04b9c22efdb57c198f6a0fd0",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:80"
+          },
+          {
+            "label": "domainSeperator",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_bytes32",
+            "contract": "EIP712BaseUpgradeable",
+            "src": "contracts\\DGMarketplace.sol:279"
+          },
+          {
+            "label": "nonces",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "EIP712MetaTransactionUpgradeable",
+            "src": "contracts\\DGMarketplace.sol:352"
+          },
+          {
+            "label": "orderbook",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(Order)1347_storage))",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:491"
+          },
+          {
+            "label": "claimKeeper",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:492"
+          },
+          {
+            "label": "freeClaimCost",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_uint256",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:494"
+          },
+          {
+            "label": "acceptedToken",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_contract(IERC20)777",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:497"
+          },
+          {
+            "label": "fee",
+            "offset": 20,
+            "slot": "156",
+            "type": "t_uint32",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:498"
+          },
+          {
+            "label": "minPrice",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_uint256",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:499"
+          },
+          {
+            "label": "feeOwner",
+            "offset": 0,
+            "slot": "158",
+            "type": "t_address",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:500"
+          },
+          {
+            "label": "backWallet",
+            "offset": 0,
+            "slot": "159",
+            "type": "t_address",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:501"
+          },
+          {
+            "label": "isBlacklisted",
+            "offset": 0,
+            "slot": "160",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:503"
+          },
+          {
+            "label": "paperKeyManager",
+            "offset": 0,
+            "slot": "161",
+            "type": "t_contract(IPaperKeyManager)801",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:505"
+          },
+          {
+            "label": "router",
+            "offset": 0,
+            "slot": "162",
+            "type": "t_contract(Router)1334",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:507"
+          },
+          {
+            "label": "USDC_token",
+            "offset": 0,
+            "slot": "163",
+            "type": "t_contract(IERC20)777",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:508"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC20)777": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IPaperKeyManager)801": {
+            "label": "contract IPaperKeyManager",
+            "numberOfBytes": "20"
+          },
+          "t_contract(Router)1334": {
+            "label": "contract Router",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+            "label": "mapping(address => mapping(address => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(Order)1347_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct DGMarketplace.Order))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Order)1347_storage)": {
+            "label": "mapping(uint256 => struct DGMarketplace.Order)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Order)1347_storage": {
+            "label": "struct DGMarketplace.Order",
+            "members": [
+              {
+                "label": "active",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "price",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "beneficiary",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint32": {
+            "label": "uint32",
+            "numberOfBytes": "4"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "a3c5fb85c381b4022394e8906a66e60ec47fb8cb19eafa5522c40f4759bdb618": {
+      "address": "0x0164B89534cF92d86C888460Ca660FA0b052557E",
+      "txHash": "0x0a3ac2e2505cadfda8174f73997354b86e95a46604690c854e960a4b34810f91",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_uint256",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:38"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "ReentrancyGuardUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\security\\ReentrancyGuardUpgradeable.sol:80"
+          },
+          {
+            "label": "domainSeperator",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_bytes32",
+            "contract": "EIP712BaseUpgradeable",
+            "src": "contracts\\DGMarketplace.sol:279"
+          },
+          {
+            "label": "nonces",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "EIP712MetaTransactionUpgradeable",
+            "src": "contracts\\DGMarketplace.sol:352"
+          },
+          {
+            "label": "orderbook",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(Order)1347_storage))",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:491"
+          },
+          {
+            "label": "claimKeeper",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_bool))",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:492"
+          },
+          {
+            "label": "freeClaimCost",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_uint256",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:494"
+          },
+          {
+            "label": "acceptedToken",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_contract(IERC20)777",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:497"
+          },
+          {
+            "label": "fee",
+            "offset": 20,
+            "slot": "156",
+            "type": "t_uint32",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:498"
+          },
+          {
+            "label": "minPrice",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_uint256",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:499"
+          },
+          {
+            "label": "feeOwner",
+            "offset": 0,
+            "slot": "158",
+            "type": "t_address",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:500"
+          },
+          {
+            "label": "backWallet",
+            "offset": 0,
+            "slot": "159",
+            "type": "t_address",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:501"
+          },
+          {
+            "label": "isBlacklisted",
+            "offset": 0,
+            "slot": "160",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:503"
+          },
+          {
+            "label": "paperKeyManager",
+            "offset": 0,
+            "slot": "161",
+            "type": "t_contract(IPaperKeyManager)801",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:505"
+          },
+          {
+            "label": "router",
+            "offset": 0,
+            "slot": "162",
+            "type": "t_contract(Router)1334",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:507"
+          },
+          {
+            "label": "USDC_token",
+            "offset": 0,
+            "slot": "163",
+            "type": "t_contract(IERC20)777",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:508"
+          },
+          {
+            "label": "tipsFee",
+            "offset": 0,
+            "slot": "164",
+            "type": "t_uint256",
+            "contract": "DGMarketplace",
+            "src": "contracts\\DGMarketplace.sol:568"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IERC20)777": {
+            "label": "contract IERC20",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IPaperKeyManager)801": {
+            "label": "contract IPaperKeyManager",
+            "numberOfBytes": "20"
+          },
+          "t_contract(Router)1334": {
+            "label": "contract Router",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_bool))": {
+            "label": "mapping(address => mapping(address => bool))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(Order)1347_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct DGMarketplace.Order))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(Order)1347_storage)": {
+            "label": "mapping(uint256 => struct DGMarketplace.Order)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Order)1347_storage": {
+            "label": "struct DGMarketplace.Order",
+            "members": [
+              {
+                "label": "active",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "price",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "beneficiary",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint32": {
+            "label": "uint32",
+            "numberOfBytes": "4"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
